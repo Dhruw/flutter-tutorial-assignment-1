@@ -1,5 +1,7 @@
 import "package:flutter/material.dart";
 
+import './app_bar.dart';
+
 main() {
   runApp(CarMan());
 }
@@ -26,9 +28,7 @@ class _CarManState extends State<CarMan> {
     return MaterialApp(
       theme: ThemeData(primarySwatch: Colors.amber),
       home: Scaffold(
-        appBar: AppBar(
-          title: Text(_appBarName),
-        ),
+        appBar: CustomAppBar(_appBarName),
         body: Column(
           children: <Widget>[
             Container(
